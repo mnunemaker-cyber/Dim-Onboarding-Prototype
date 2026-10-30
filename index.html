@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dimensions Institution Champion Onboarding | Digital Science</title>
+  <title>Dimensions Onboarding Portal | Digital Science</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <script>
@@ -37,17 +37,30 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-body antialiased selection:bg-dsBlue selection:text-white">
 
-  <!-- TOP BRAND BANNER -->
-  <header class="bg-dsPurple-dark border-b border-purple-900/50 py-3 px-6 text-xs text-purple-200">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center space-x-2">
-        <span class="font-bold text-white tracking-wider uppercase font-heading text-sm">Digital Science</span>
-        <span class="text-slate-400">|</span>
-        <span>Dimensions Learning & Onboarding Team</span>
+  <!-- TOP BRAND BANNER WITH DIMENSIONS LOGO + DIGITAL SCIENCE -->
+  <header class="bg-dsPurple-dark border-b border-purple-900/50 py-3.5 px-6 text-xs text-purple-200">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+      <!-- Dimensions Logo + Name Brand Lockup -->
+      <div class="flex items-center space-x-3">
+        <a href="https://www.dimensions.ai/" target="_blank" class="flex items-center gap-2.5 text-white hover:opacity-90 transition">
+          <!-- Dimensions Facet Icon -->
+          <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2L4 9V23L16 30L28 23V9L16 2Z" stroke="#40BBED" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M16 2V30M4 9L28 23M4 23L28 9" stroke="#40BBED" stroke-width="1.5" stroke-opacity="0.6"/>
+          </svg>
+          <span class="font-heading text-xl font-bold tracking-tight text-white uppercase">Dimensions</span>
+        </a>
+        <span class="text-purple-400/60 text-sm">|</span>
+        <span class="text-purple-200 text-xs font-medium">Digital Science</span>
       </div>
+
+      <!-- Support Link -->
       <div class="flex items-center gap-4">
-        <span>Need assistance?</span>
-        <a href="mailto:support@dimensions.ai" class="text-dsBlue hover:underline font-semibold">support@dimensions.ai</a>
+        <span>Questions?</span>
+        <a href="mailto:support@dimensions.ai" class="text-dsBlue hover:underline font-semibold flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          support@dimensions.ai
+        </a>
       </div>
     </div>
   </header>
@@ -55,14 +68,15 @@
   <!-- HERO SECTION -->
   <section class="bg-dsPurple text-white py-14 px-6 relative overflow-hidden">
     <div class="max-w-5xl mx-auto">
-      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-dsBlue/20 text-dsBlue border border-dsBlue/30 mb-4">
-        Your Institution Kickoff Hub
-      </span>
+      
+      <!-- Headline -->
       <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight">
-        Welcome to Dimensions, Institution Champion.
+        Welcome to Dimensions
       </h1>
+      
+      <!-- Hero Paragraph -->
       <p class="text-lg sm:text-xl text-purple-100/90 leading-relaxed max-w-3xl">
-        This portal replaces our traditional kickoff meeting so you can work through implementation at your own pace. Everything you need to set up authentication, connect your systems, and empower your researchers is right here.
+        This portal lets you work through implementation at your own pace. Everything you need to set up authentication, connect your systems, and empower your researchers is right here.
       </p>
 
       <!-- CHAMPION CALLOUT NOTE -->
@@ -74,41 +88,42 @@
           <div>
             <h3 class="font-heading text-base font-bold text-white uppercase tracking-wider">A Note on Your Role as Champion</h3>
             <p class="mt-1 text-purple-100">
-              As your institution’s Champion, you act as the bridge between your users and Digital Science. You don't need to be a technical expert—your primary task on this page is selecting your access method, looping in your IT lead if needed, and submitting your parameters. Our team handles the back-end configuration.
+              As your institution’s Champion, you act as the bridge between your users and Digital Science. You don't need to be a technical expert—your primary task on this page is selecting your access method, copying our snippets for your IT lead if needed, and submitting your parameters.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- TWO COLUMN: YOU DO / WE DO -->
+      <!-- TWO COLUMN: WHAT YOU PROVIDE / WHAT DIGITAL SCIENCE WILL DO -->
       <div class="grid sm:grid-cols-2 gap-4 mt-6">
         <div class="bg-dsPurple-dark/40 p-5 rounded-xl border border-purple-300/10">
           <h2 class="font-heading text-dsBlue uppercase tracking-wider text-sm font-bold flex items-center gap-2 mb-2">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-            What You Will Do
+            What You Provide
           </h2>
           <ul class="text-sm text-slate-200 space-y-1.5 list-disc list-inside">
-            <li>Verify your access method in your Dimensions contract</li>
+            <li>Confirm your access method from your contract</li>
             <li>Submit domain, IP, or SSO identity parameters via our form</li>
             <li>Coordinate any licensed add-ons (API, BigQuery, CRIS)</li>
           </ul>
         </div>
+        
         <div class="bg-dsPurple-dark/40 p-5 rounded-xl border border-purple-300/10">
           <h2 class="font-heading text-dsBlue uppercase tracking-wider text-sm font-bold flex items-center gap-2 mb-2">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             What Digital Science Will Do
           </h2>
           <ul class="text-sm text-slate-200 space-y-1.5 list-disc list-inside">
-            <li>Validate and configure your authentication within 48 hours</li>
+            <li>Validate and configure your authentication</li>
             <li>Test connection integrity before full rollout</li>
-            <li>Deliver your team orientation and ongoing training</li>
+            <li>Provide access and training resources</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5-STEP TIMELINE BAR -->
+  <!-- 5-STEP ROADMAP TIMELINE -->
   <section class="bg-white border-b border-slate-200 py-6 px-6 shadow-sm">
     <div class="max-w-5xl mx-auto">
       <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 font-heading">Onboarding Roadmap at a Glance</p>
@@ -131,7 +146,7 @@
         </div>
         <div class="p-3 rounded-lg bg-dsPurple/5 border-l-4 border-dsPurple">
           <span class="font-bold text-dsPurple block mb-1">Step 5</span>
-          <span class="text-slate-700">Live Team Orientation</span>
+          <span class="text-slate-700">Self-paced Orientation</span>
         </div>
       </div>
     </div>
@@ -139,17 +154,17 @@
 
   <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
 
-    <!-- STEP 1: ACCESS METHOD SELECTOR & CONTRACT CHECK -->
+    <!-- STEP 1: ACCESS METHOD SELECTOR -->
     <section id="step-access" class="scroll-mt-10">
       <div class="mb-6">
         <span class="text-xs uppercase font-bold text-dsBlue tracking-wider font-heading">Step 1 of 5</span>
         <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Select Your Access Method</h2>
         <p class="text-slate-600 mt-1">
-          Your Dimensions agreement specifies one of four access options. Confirm which model your contract specifies, then review the prerequisites below.
+          Your Dimensions agreement specifies your access method. Confirm which method your contract specifies, then review the prerequisites below.
         </p>
       </div>
 
-      <!-- CONTRACT & ACCESS DECISION GUIDE (REPLACES VIDEO) -->
+      <!-- CONTRACT & ACCESS DECISION GUIDE -->
       <div class="bg-gradient-to-r from-dsPurple to-dsPurple-light text-white rounded-2xl p-6 sm:p-8 mb-8 shadow-md">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div class="max-w-2xl">
@@ -159,7 +174,7 @@
             </span>
             <h3 class="font-heading text-2xl font-bold mb-2">How Will Your Users Access Dimensions?</h3>
             <p class="text-sm text-purple-100 leading-relaxed">
-              Your contract Schedule specifies whether your institution connects via <strong>Single Sign-On (SSO)</strong>, <strong>IP Range</strong>, <strong>Email Domain</strong>, or <strong>Named Accounts</strong>. Look for the section titled <em>"Access & Authentication Specification"</em> in your signed agreement.
+              Your contract specifies whether your institution connects via <strong>Single Sign-On (SSO)</strong>, <strong>IP Range</strong>, <strong>Email Domain</strong>, or <strong>Named Accounts</strong>. Look for the section titled <em>"Access & Authentication Specification"</em> in your signed agreement.
             </p>
           </div>
           <div class="shrink-0 bg-dsPurple-dark/80 p-4 rounded-xl border border-purple-300/20 text-xs text-purple-200 space-y-1.5 max-w-xs">
@@ -167,7 +182,7 @@
               <span>❓</span> Not sure which you have?
             </p>
             <p class="text-purple-200">
-              Check your contract Schedule or email our team at <a href="mailto:support@dimensions.ai" class="text-dsBlue underline">support@dimensions.ai</a> before submitting the form.
+              Check your contract or email our team at <a href="mailto:support@dimensions.ai" class="text-dsBlue underline font-semibold">support@dimensions.ai</a> before submitting the form.
             </p>
           </div>
         </div>
@@ -528,7 +543,7 @@ Please send these to me or email directly to support@dimensions.ai with our inst
         <span class="text-xs uppercase font-bold text-dsBlue tracking-wider font-heading">Step 4 of 5</span>
         <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Specialized Licences & Integrations</h2>
         <p class="text-slate-600 mt-1">
-          Review your agreement Schedule to see if your institution has licensed advanced endpoints. If so, follow the protocols below:
+          Review your agreement contract to see if your institution has licensed advanced endpoints. If so, follow the protocols below:
         </p>
       </div>
 
@@ -594,7 +609,7 @@ Please send these to me or email directly to support@dimensions.ai with our inst
           </div>
         </div>
 
-        <!-- 4.2 ANALYTICS API -->
+        <!-- 4.2 ANALYTICS API (ALL THREE LINKS VISIBLY STYLED) -->
         <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4 mb-4">
             <div>
@@ -625,14 +640,24 @@ Please send these to me or email directly to support@dimensions.ai with our inst
             </a>
           </div>
 
-          <div class="flex flex-wrap gap-4 mt-4 pt-4 border-t border-slate-100 text-xs">
-            <a href="https://api-lab.dimensions.ai/" target="_blank" class="text-dsBlue hover:underline font-semibold flex items-center gap-1">API Lab Cookbooks &rarr;</a>
-            <a href="https://docs.dimensions.ai/dsl/" target="_blank" class="text-dsBlue hover:underline font-semibold flex items-center gap-1">DSL Documentation &rarr;</a>
-            <a href="https://360.eu.articulate.com/review/content/54d4e740-2628-4114-807d-0a4e2b11cdd4/review" target="_blank" class="text-dsBlue hover:underline font-semibold flex items-center gap-1">Self-Paced API Video Course &rarr;</a>
+          <!-- All three links now styled consistently as active hyperlinks with arrows -->
+          <div class="flex flex-wrap items-center gap-6 mt-4 pt-4 border-t border-slate-100 text-xs">
+            <a href="https://learn.dimensions.ai/accelerating-analytics-your-guide-to-the-dimensions-api" target="_blank" class="text-dsBlue hover:underline font-semibold inline-flex items-center gap-1.5 transition">
+              <span>Accelerating Analytics: Your Guide to the Dimensions API</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="https://api-lab.dimensions.ai/" target="_blank" class="text-dsBlue hover:underline font-semibold inline-flex items-center gap-1.5 transition">
+              <span>API Lab Cookbooks</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="https://docs.dimensions.ai/dsl/" target="_blank" class="text-dsBlue hover:underline font-semibold inline-flex items-center gap-1.5 transition">
+              <span>DSL Documentation</span>
+              <span>&rarr;</span>
+            </a>
           </div>
         </div>
 
-        <!-- 4.3 GOOGLE BIGQUERY -->
+        <!-- 4.3 GOOGLE BIGQUERY (GBQ WIDGET PLACED AS LAST BLOCK) -->
         <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4 mb-4">
             <div>
@@ -659,9 +684,22 @@ Please send these to me or email directly to support@dimensions.ai with our inst
             </div>
           </div>
 
-          <div class="text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-1">
+          <!-- Single-Use Invite Links Notice -->
+          <div class="text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-1 mb-4">
             <p><strong>Single-Use Invite Links:</strong> Once Digital Science configures your GBQ users, each user receives an invitation link that must be accepted promptly. Ensure users monitor their inbox (and spam folder).</p>
             <p class="pt-1">Submit completed requests to <code class="font-mono text-dsPurple">support@dimensions.ai</code> with subject line: <span class="italic font-bold">"Dimensions GBQ Access -- [Organisation Name]"</span>.</p>
+          </div>
+
+          <!-- GBQ Onboarding Widget (Repositioned as LAST BLOCK in GBQ section) -->
+          <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+            <div>
+              <strong class="text-emerald-950 font-heading text-sm block">Interactive GBQ Onboarding Assistant</strong>
+              <p class="text-emerald-800">Use our guided assistant in the Dimensions Learning Center to navigate schema, billing, and setup steps.</p>
+            </div>
+            <a href="https://learn.dimensions.ai/dimensions-on-google-bigquery/578063" target="_blank" class="shrink-0 px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-lg transition shadow-sm flex items-center gap-1.5">
+              <span>Open GBQ Onboarding Assistant</span>
+              <span>&rarr;</span>
+            </a>
           </div>
         </div>
 
@@ -682,7 +720,7 @@ Please send these to me or email directly to support@dimensions.ai with our inst
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs text-slate-700 space-y-2">
             <p><strong>Setup Instructions:</strong></p>
             <ol class="list-decimal list-inside space-y-1 text-slate-600">
-              <li>Confirm which specific applications are included in your contract Schedule.</li>
+              <li>Confirm which specific applications are included in your contract.</li>
               <li>Download the user list CSV template (same template as API).</li>
               <li>Email list to <code class="font-mono text-dsPurple">support@dimensions.ai</code> with subject line format: <span class="italic font-bold">"Dimensions Applications Access -- [Organisation Name] -- [Application Name(s)]"</span>.</li>
             </ol>
@@ -692,83 +730,99 @@ Please send these to me or email directly to support@dimensions.ai with our inst
       </div>
     </section>
 
-    <!-- STEP 5: WHAT HAPPENS NEXT & AGENDA -->
+    <!-- STEP 5: WHAT HAPPENS NEXT -->
     <section id="step-next" class="scroll-mt-10">
       <div class="mb-6">
         <span class="text-xs uppercase font-bold text-dsBlue tracking-wider font-heading">Step 5 of 5</span>
-        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">What Happens Next?</h2>
-        <p class="text-slate-600 mt-1">Here is what to expect once your forms and user lists are submitted:</p>
-      </div>
-
-      <div class="grid sm:grid-cols-3 gap-6 mb-8">
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative">
-          <div class="w-8 h-8 rounded-full bg-dsPurple text-white flex items-center justify-center font-bold text-sm mb-3">1</div>
-          <h3 class="font-heading text-lg font-bold text-slate-900 mb-1">Configuration & QA</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Digital Science verifies your IP ranges, validates your SAML federation metadata, and enables your user domains. We will contact you to perform a test authentication before full deployment.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative">
-          <div class="w-8 h-8 rounded-full bg-dsPurple text-white flex items-center justify-center font-bold text-sm mb-3">2</div>
-          <h3 class="font-heading text-lg font-bold text-slate-900 mb-1">Champion Orientation</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Your Program Manager coordinates a dedicated 45-minute live orientation session for you and your core project stakeholders (see full agenda below).
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative">
-          <div class="w-8 h-8 rounded-full bg-dsPurple text-white flex items-center justify-center font-bold text-sm mb-3">3</div>
-          <h3 class="font-heading text-lg font-bold text-slate-900 mb-1">Ongoing Partnership</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Receive ongoing access to user adoption materials, release update webinars, dedicated technical ticketing, and self-paced learning courses for your faculty and researchers.
-          </p>
-        </div>
-      </div>
-
-      <!-- AGENDA GRID -->
-      <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
-        <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Live Orientation Session: Topic Agenda</h3>
-        <p class="text-xs text-slate-600 mb-6">
-          During your live walkthrough, our Training Specialists tailor the session to your institution's specific goals:
+        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">What Happens Next</h2>
+        <p class="text-slate-600 mt-1">
+          Here is our provisioning and self-service orientation process once your configuration forms or user lists are submitted:
         </p>
+      </div>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <span class="font-bold text-dsPurple block mb-1">Administrative Overview</span>
-            <p class="text-slate-600">Reviewing access logs, managing seat allowances, tracking usage data, and adding authorized champions.</p>
+      <!-- 3 STAGE PROCESS -->
+      <div class="grid sm:grid-cols-3 gap-6 mb-8">
+        
+        <!-- CARD 1: SUBMIT INFO -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-full bg-dsPurple text-white flex items-center justify-center font-bold text-sm mb-3">1</div>
+            <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Champion Submits Info</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Submit your configuration details via the main setup form, and email any required CSV user lists for licensed add-ons.
+            </p>
           </div>
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <span class="font-bold text-dsPurple block mb-1">Search & Analytics</span>
-            <p class="text-slate-600">Advanced boolean queries, filtering by funder, extracting citation metrics, and evaluating research impact.</p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-400">
+            Intake captured immediately
           </div>
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <span class="font-bold text-dsPurple block mb-1">User Engagement Kit</span>
-            <p class="text-slate-600">Turnkey communication templates, promotional slide decks, and intranet banners for announcing rollout.</p>
+        </div>
+
+        <!-- CARD 2: PROVISIONS ACCESS -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-full bg-dsPurple text-white flex items-center justify-center font-bold text-sm mb-3">2</div>
+            <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Dimensions Provisions Access</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Our team configures and validates your access. <strong>A meeting will be held if there are any difficulties with setup.</strong>
+            </p>
           </div>
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <span class="font-bold text-dsPurple block mb-1">Support & Escalations</span>
-            <p class="text-slate-600">Direct technical help desk channels, documentation libraries, and feature enhancement request logs.</p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-emerald-600 font-semibold">
+            Support meeting scheduled if needed
+          </div>
+        </div>
+
+        <!-- CARD 3: SELF-SERVICE ORIENTATION (NOW AN ACTIVE CLICKABLE LINK) -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-full bg-dsPurple text-white flex items-center justify-center font-bold text-sm mb-3">3</div>
+            <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Self-Service Orientation</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Orientation is now provided as self-service through the <strong>Dimensions Learning Center</strong>. Users can take self-paced onboarding courses or register for live, instructor-led sessions.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100">
+            <a href="https://learn.dimensions.ai/page/all-courses" target="_blank" class="text-xs text-dsBlue hover:underline font-semibold inline-flex items-center gap-1 transition">
+              <span>Self-paced &amp; live session options</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MASTER LINK DIRECTORY: DIMENSIONS LEARNING CENTER SPOTLIGHT -->
+      <div class="bg-gradient-to-r from-dsPurple to-dsPurple-dark text-white rounded-2xl p-6 sm:p-8 shadow-md mb-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="max-w-2xl">
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded bg-dsBlue/20 text-dsBlue text-xs font-semibold uppercase tracking-wider mb-2">
+              Dimensions Learning Center
+            </span>
+            <h3 class="font-heading text-2xl font-bold mb-2">Explore Self-Paced Courses & Live Sessions</h3>
+            <p class="text-sm text-purple-100 leading-relaxed">
+              Access comprehensive onboarding modules for champions, researchers, and library administrators. Take self-paced courses at your convenience or sign up for live, instructor-led training webinars.
+            </p>
+          </div>
+          <div class="shrink-0 w-full md:w-auto">
+            <a href="https://learn.dimensions.ai/page/all-courses" target="_blank" class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-dsBlue hover:bg-dsBlue-hover text-white font-bold text-sm rounded-xl transition shadow-lg">
+              <span>View All Courses</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- BOTTOM BANNER -->
-      <div class="bg-dsPurple text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- CONTINUOUS EMAIL SUPPORT CALLOUT -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <h3 class="font-heading text-2xl font-bold mb-1">Ready for Immediate Training?</h3>
-          <p class="text-sm text-purple-100 max-w-xl">
-            You don't need to wait for your orientation session to explore. Start our interactive, self-paced champion course or reach out to our team right away.
+          <h4 class="font-heading text-lg font-bold text-slate-900 mb-1">Continuous Support Always Available</h4>
+          <p class="text-xs text-slate-600">
+            Have questions during implementation or need setup assistance? Support via email is always available.
           </p>
         </div>
-        <div class="flex flex-wrap gap-3 shrink-0">
-          <a href="https://360.eu.articulate.com/review/content/54d4e740-2628-4114-807d-0a4e2b11cdd4/review" target="_blank" class="px-5 py-2.5 bg-dsBlue hover:bg-dsBlue-hover text-white font-bold text-xs rounded-lg transition shadow">
-            Launch Self-Paced Course &rarr;
-          </a>
-          <a href="mailto:support@dimensions.ai" class="px-5 py-2.5 bg-dsPurple-dark hover:bg-purple-900 border border-purple-400/30 text-white font-bold text-xs rounded-lg transition">
-            Email Support Desk
-          </a>
-        </div>
+        <a href="mailto:support@dimensions.ai" class="shrink-0 px-5 py-2.5 bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs rounded-lg transition flex items-center gap-2">
+          <svg class="w-4 h-4 text-dsBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          support@dimensions.ai
+        </a>
       </div>
 
     </section>
@@ -778,7 +832,7 @@ Please send these to me or email directly to support@dimensions.ai with our inst
   <footer class="bg-white border-t border-slate-200 py-8 px-6 text-center text-xs text-slate-500">
     <div class="max-w-5xl mx-auto space-y-2">
       <p>&copy; Digital Science & Research Solutions Inc. All rights reserved. Dimensions is part of Digital Science.</p>
-      <p>Questions? Contact the Program Management & Learning Team at <a href="mailto:support@dimensions.ai" class="text-dsPurple underline">support@dimensions.ai</a></p>
+      <p>Dimensions Champion Onboarding Portal | <a href="mailto:support@dimensions.ai" class="text-dsPurple underline font-semibold">support@dimensions.ai</a></p>
     </div>
   </footer>
 
